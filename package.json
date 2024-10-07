@@ -6,13 +6,16 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only ./src/app.ts",
     "build": "tsc",
-    "start": "node ./dist/src/app.js"
+    "start": "node ./dist/src/app.js",
+    "gen": "prisma generate",
+    "genpil": "prisma generate --schema ./prisma/schema-pil.prisma"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@apollo/client": "^3.11.8",
+    "@prisma/client": "5.1.1",
     "@types/dotenv": "^8.2.0",
     "@types/ejs": "^3.1.2",
     "body-parser": "^1.20.2",
